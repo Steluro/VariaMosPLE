@@ -2298,13 +2298,13 @@ const Chatbot: React.FC<ChatbotProps> = ({ projectService }) => {
         let idApp = -1;
         let idAppModel = -1;
 
-        outer: for (let i = 0; i < apps.length; i++) {
+        for (let i = 0; i < apps.length; i++) {
           const ms = apps[i].models || [];
           const j = ms.findIndex((m: any) => m.id === model.id);
           if (j >= 0) {
             idApp = i;
             idAppModel = j;
-            break outer;
+            break;
           }
         }
 

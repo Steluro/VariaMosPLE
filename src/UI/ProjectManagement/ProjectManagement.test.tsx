@@ -7,7 +7,7 @@ import React from "react";
 import * as alertify from "alertifyjs";
 
 
-test('On initial render, the Create button should be enabled ', ()=>{
+test('On initial render, the Create button should be enabled', ()=>{
    //Arrange
    let project_service = new ProjectService();
    render(<ProjectManagement projectService={project_service} />);
@@ -17,7 +17,7 @@ test('On initial render, the Create button should be enabled ', ()=>{
 
 describe('Testing the Project name input', ()=>{
 
-   test('On initial render, the Project Name input should be empty ', ()=>{
+   test('On initial render, the Project Name input should be empty', ()=>{
       //Arrange
       let project_service = new ProjectService();
       render(<ProjectManagement projectService={project_service} />);
@@ -44,7 +44,7 @@ describe('Testing the Project name input', ()=>{
 
 describe('Testing the Product line name input', ()=>{
 
-   test('On initial render, the Product Line Name input should be empty ', ()=>{
+   test('On initial render, the Product Line Name input should be empty', ()=>{
       //Arrange
       let project_service = new ProjectService();
       render(<ProjectManagement projectService={project_service} />);

@@ -7,7 +7,7 @@ import React from "react";
 
 
 describe('Testing the LanguageManagement Component', ()=>{
-    test('The update button is enabled ', ()=>{
+    test('The update button is enabled', ()=>{
         let project_service = new ProjectService();
         render(<LanguageManagement projectService={project_service} />);
         //Assert
@@ -16,7 +16,7 @@ describe('Testing the LanguageManagement Component', ()=>{
         })).toBeEnabled();
 
     });
-    test('The delete button is enabled ', () => {
+    test('The delete button is enabled', () => {
         let project_service = new ProjectService();
         render(<LanguageManagement projectService={project_service} />);
         //Assert
@@ -24,7 +24,7 @@ describe('Testing the LanguageManagement Component', ()=>{
             name: /delete language/i
         })).toBeEnabled();
     });
-    test('The create language button is enabled ', () => {
+    test('The create language button is enabled', () => {
         let project_service = new ProjectService();
         render(<LanguageManagement projectService={project_service} />);
         //Assert

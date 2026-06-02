@@ -34,7 +34,7 @@ describe('all methods should work', ()=>{
   });
 
 
-  test('Applying restriction with restriction length < 1 ', async () => {
+  test('Applying restriction with restriction length < 1', async () => {
 
     //ARRANGE
     //Mocks
@@ -66,7 +66,7 @@ describe('all methods should work', ()=>{
   });
 
 
-  test('Applying restriction with restriction length >= 1 ', async () => {
+  test('Applying restriction with restriction length >= 1', async () => {
 
     //ARRANGE
     //Mocks

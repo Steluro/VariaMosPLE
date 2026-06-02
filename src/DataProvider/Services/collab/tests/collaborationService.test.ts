@@ -1,5 +1,7 @@
 import { MockYDoc, MockYMap, MockProvider } from './mocks';
 
+import * as collaborationService from '../collaborationService';
+
 jest.mock('yjs', () => {
   const mocks = require('./mocks');
   return {
@@ -13,8 +15,6 @@ jest.mock('y-websocket', () => {
     WebsocketProvider: mocks.MockProvider
   };
 });
-
-import * as collaborationService from '../collaborationService';
 
 describe('collaborationService (unit / light integration)', () => {
   const PROJECT_ID = 'proj-test';

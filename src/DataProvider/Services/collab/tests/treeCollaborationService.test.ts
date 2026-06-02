@@ -1,3 +1,7 @@
+import treeCollaborationService from '../treeCollaborationService';
+import * as collabService from '../collaborationService';
+import { MockYDoc, MockYMap, MockProvider } from './mocks';
+
 jest.mock('yjs', () => {
   const mocks = require('./mocks');
   return {
@@ -11,10 +15,6 @@ jest.mock('y-websocket', () => {
     WebsocketProvider: jest.fn().mockImplementation(() => new mocks.MockProvider())
   };
 });
-
-import treeCollaborationService from '../treeCollaborationService';
-import * as collabService from '../collaborationService';
-import { MockYDoc, MockYMap, MockProvider } from './mocks';
 
 jest.mock('../collaborationService');
 
